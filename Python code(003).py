@@ -1,5 +1,5 @@
 #Q1
-'''def list():
+def list():
     Lst = ['good', 'evening']
     print(Lst)
     s = set()
@@ -56,7 +56,7 @@ def set4():
             sb.add(nm)
     print (sa)
     print(sb)
-set4()'''
+set4()
 
 #Q5
 def set5():
