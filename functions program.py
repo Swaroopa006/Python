@@ -71,10 +71,15 @@ n = int(input("Enter a number: "))
 print(f"Factorial of a number is {fact(n)}")'''
 
 def count_lower_upper(str):
-    i= 0
-    u = 0
+    s= 0
     for i in str:
         if (i.isupper()):
+            s+=1
+    a =0
+    for i in str:
+        if(i.islower()):
+            a+=1
+    return(s,a)
     str = input("Enter a string")
 count_lower_upper()
 
