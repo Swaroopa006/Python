@@ -1,4 +1,4 @@
-#Q-1
+#q1)
 import csv
 data = [
     ["Name", "Age", "City"],
@@ -12,7 +12,6 @@ with open(filename, mode='w', newline='') as file:
     writer.writerows(data)
 
 print(f"CSV file '{filename}' has been created successfully!")
-#Q-1
 
 f = open("C:\\Users\\lab\\Downloads\\people.csv","w")
 f.write ("Sandh,")
@@ -21,7 +20,7 @@ f.write ("87931546164")
 
 f.close()
 
-#Q-2
+#q2)
 
 f = open("C:\\Users\\lab\\Downloads\\people.csv","w")
 f.write("Roll no, name,Maths,Physics,Chemistry")
@@ -33,7 +32,7 @@ while roll_no:
     rlno = input("Enter your roll no. [press enter to quit]")
 f.close()
 
-#Q-3
+#q3)
 
 f = open("C:\\Users\\lab\\Downloads\\people.csv","a")
 f.write("roll no, name, maths,physics,chemistry")
@@ -45,7 +44,7 @@ while rlno:
     rlno = input("enter your roll no. [press enter to quit]")
 f.close()
 
-#Q-4
+#q4)
 
 import os    
 import shutil  
@@ -74,7 +73,7 @@ except FileNotFoundError:
 except Exception as error:
     print("Something went wrong:", error)
 
-#Q-5
+#q5)
 
 try:
     with open('source.txt', 'r') as source_file:
@@ -95,7 +94,7 @@ except FileNotFoundError:
 except Exception as e:
     print("An error occurred:", e)
 
-#Q-6
+#q6)
 
 try:
     with open('file1.txt', 'r') as f1, open('file2.txt', 'r') as f2:
@@ -123,7 +122,7 @@ except FileNotFoundError as e:
 except Exception as e:
     print("An error occurred:", e)
 
-#Q-7
+#q7)
 
 class Employee:
     def _init_(self, empcode, empname, date_of_joining, salary):
@@ -156,25 +155,17 @@ with open("employee.txt", "r") as file:
     joining_date = file.readline().strip()
     salary = float(file.readline().strip())
 
-
 new_emp = Employee(code, name, joining_date, salary)
-
 print("\nEmployee data read from file:")
 new_emp.display()
 
-#Q-8
+#q8)
 
 remove_words = ['a', 'an', 'the']
-
-
 with open('source.txt', 'r') as infile:
     content = infile.read()
-
-
 words = content.split()  
 filtered_words = [word for word in words if word.lower() not in remove_words]  
-
-
 cleaned_text = ' '.join(filtered_words)
 
 
