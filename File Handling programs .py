@@ -2,7 +2,7 @@
 import csv
 data = [
     ["Name", "Age", "City"],
-    ["Alia", 25, "Bhopal"],
+    ["Khush", 25, "Bhopal"],
 ]
 
 filename = "people.csv"
@@ -14,8 +14,8 @@ with open(filename, mode='w', newline='') as file:
 print(f"CSV file '{filename}' has been created successfully!")
 
 f = open("C:\\Users\\lab\\Downloads\\people.csv","w")
-f.write ("Sandh,")
-f.write ("Sharma")
+f.write ("Sam,")
+f.write ("Arora")
 f.write ("87931546164")
 
 f.close()
@@ -48,20 +48,14 @@ f.close()
 
 import os    
 import shutil  
-
-
 source_file = "Users\sriva\Downloads\APPLICATIONS_OF_SECOND-ORDER_DIFFERENTIA (1).pdf"  # This is where the file is now
-
-
 new_folder = 'new'  
-
 
 if not os.path.exists(new_folder):
     os.mkdir(new_folder)  
     print("New folder created:", new_folder)
 else:
     print("Folder already exists:", new_folder)
-
 
 destination_file = new_folder + "Users\sriva\Downloads\APPLICATIONS_OF_SECOND-ORDER_DIFFERENTIA (1).pdf"
 
