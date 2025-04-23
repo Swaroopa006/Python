@@ -1,4 +1,4 @@
-#Q-1
+#q1)
 class ComplexNumber:
     def __init__(self,r,i):
         self.r =r
@@ -47,7 +47,7 @@ print("Subtraction:", num1-num2)
 print("Multiplication:", num1*num2)
 print("Division:", num1/num2)
 
-#Q-2
+#q3)
 class Matrix:
     def __init__(self, lst=[[0,0,0],[0,0,0],[0,0,0]]):
            self.mat=lst
@@ -96,7 +96,7 @@ print()
 m4=m1.transpose(m2)
 m4.display()
 
-#Q-3
+#q3)
 import math
 
 class Solid:
@@ -172,7 +172,7 @@ print("\nShape:", solid.shape.capitalize())
 print("Surface Area:", round(solid.surface_area(), 2))
 print("Volume:", round(solid.volume(), 2))
 
-#Q-4
+#q4)
 import math
 
 class RegularShape:
@@ -262,7 +262,7 @@ print("\nShape:", shape.shape.capitalize())
 print("Area:", round(shape.area(), 2))
 print("Perimeter/Circumference:", round(shape.perimeter(), 2))
 
-#Q-5
+#q5)
 class Time:
     def __init__(self, hours=0, minutes=0, seconds=0):
         self.hours = hours
@@ -316,7 +316,7 @@ print("Time 1 - Time 2:", diff_time)
 print("Time 1 in seconds:", time1.to_seconds())
 print("Time 2 in seconds:", time2.to_seconds())
 
-#Q-6
+#q6)
 class Date:
     def __init__(self, day, month, year):
         self.date = [day, month, year]  
@@ -338,7 +338,7 @@ print("Date 3:", date3)
 print("\nIs Date 1 equal to Date 2?", date1 == date2)
 print("Is Date 1 equal to Date 3?", date1 == date3)
 
-#Q-7
+#q7)
 class Weather:
     def __init__(self, parameters):
         self.parameters = parameters
@@ -356,7 +356,7 @@ print(today_weather)
 print("\nIs it Sunny today?", "Sunny" in today_weather)
 print("Is it Rainy today?", "Rainy" in today_weather)
 
-#Q-8
+#q8)
 class MyString:
     def __init__(self, text):
         self.text = text
